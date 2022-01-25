@@ -436,7 +436,7 @@ int solver(word sample, int row, int col){
 					if (!temp){			//apabila pencarian menurun sudah dilakukan dan gagal mendapatkan solusi
 						ii = i+1;
 						k = 1;
-						if (j<= col -sample.length-1){
+						if (j<= col -sample.length){
 							temp = True;
 							jj = j+1;
 						
@@ -520,7 +520,6 @@ int main(){
 	scanf("%s", filename);
 	char dir[] = "../test/";
 	strcat(dir,filename);
-	printf("%s", dir);
 	
     if (startFile(dir)){
 		readMatrix(&row,&col);
@@ -533,6 +532,7 @@ int main(){
 			sumPerbandingan += solver(kata[i], row,col);
 			printf("\n\n");
 		}
+		
 		end = clock();
 		cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
 		printf("Waktu Eksekusi program : %lf (s)\n", cpu_time_used);
