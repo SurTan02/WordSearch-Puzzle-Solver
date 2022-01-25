@@ -4,7 +4,7 @@ Program ini dibuat untuk memenuhi tugas kecil 1 mata kuliah Strategi Algoritma I
 ## Requirement
 
 * gcc compiler
-* txt file
+* text editor 
 
 ## Cara Menggunakan Program
 * Siapakan puzzle dan keywords yang akan dicari pada sebuah file berformat txt
